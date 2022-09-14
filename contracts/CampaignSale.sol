@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract Campaign is ICampaignSale, ReentrancyGuard {
+contract CampaignSale is ICampaignSale, ReentrancyGuard {
     using Counters for Counters.Counter;
 
     IERC20 public immutable campaignToken;

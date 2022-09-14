@@ -18,7 +18,7 @@ describe("Campaign contract", function () {
     const ERC20Token = await ethers.getContractFactory("ERC20Test");
     erc20Token = await ERC20Token.deploy("test token", "TERC20");
 
-    let campaign = await ethers.getContractFactory("Campaign");
+    let campaign = await ethers.getContractFactory("CampaignSale");
 
     campaignContract = await campaign.deploy(erc20Token.address);
     await campaignContract.deployed();
